@@ -1,6 +1,4 @@
 [
-    {"type":"table","name":"prestataires","database":"comparateur","data":
-    [
     {"id":"1","Nom":"Laboiteamoments","Cabine_photo":"OUI","Borne_photo":"OUI","Helio_booth":"OUI"},
     {"id":"2","Nom":"Kruu","Cabine_photo":"NON","Borne_photo":"OUI","Helio_booth":"NON"},
     {"id":"3","Nom":"Josepho","Cabine_photo":"NON","Borne_photo":"NON","Helio_booth":"OUI"},
@@ -45,8 +43,5 @@
     {"id":"42","Nom":"Studiopixl","Cabine_photo":"NON","Borne_photo":"OUI","Helio_booth":"NON"},
     {"id":"43","Nom":"Souvenirdunjourcalvados","Cabine_photo":"NON","Borne_photo":"OUI","Helio_booth":"NON"},
     {"id":"44","Nom":"Scenophoto","Cabine_photo":"NON","Borne_photo":"OUI","Helio_booth":"NON"}
-   
-    ]
-    }
     ]
     
