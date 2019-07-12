@@ -1,6 +1,4 @@
 [
-    {"type":"header","version":"4.8.4","comment":"Export to JSON plugin for PHPMyAdmin"},
-    {"type":"database","name":"comparateur"},
     {"type":"table","name":"prestataires","database":"comparateur","data":
     [
     {"id":"1","Nom":"Laboiteamoments","Cabine_photo":"OUI","Borne_photo":"OUI","Helio_booth":"OUI"},
@@ -48,27 +46,6 @@
     {"id":"43","Nom":"Souvenirdunjourcalvados","Cabine_photo":"NON","Borne_photo":"OUI","Helio_booth":"NON"},
     {"id":"44","Nom":"Scenophoto","Cabine_photo":"NON","Borne_photo":"OUI","Helio_booth":"NON"}
    
-    ]
-    }
-    ,{"type":"table","name":"prestations","database":"comparateur","data":
-    [
-    {"id_prestation":"1","type":"Cabine_photo"},
-    {"id_prestation":"2","type":"Borne_photo"},
-    {"id_prestation":"3","type":"Helio_booth"}
-    ]
-    }
-    ,{"type":"table","name":"sitesweb","database":"comparateur","data":
-    [
-    {"id_sitesweb":"1","nom":"Les cabines d'Alex","prestations":"Hélio Booth, Cabine Photo","url":"https:\/\/lescabinesdalex.com\/","logo":"http:\/\/epc.sharingbox.fr\/wp-content\/uploads\/2015\/12\/share.jpg","code postal":"33000"},
-    {"id_sitesweb":"2","nom":"Kruu","prestations":"Cabine Photo","url":"https:\/\/kruu.com\/de-fr\/louer-un-photobooth\/","logo":"http:\/\/epc.sharingbox.fr\/wp-content\/uploads\/2015\/12\/share.jpg","code postal":"33000"},
-    {"id_sitesweb":"3","nom":"Sharing box","prestations":"Borne Photo, Cabine photo","url":"https:\/\/www.sharingbox.com","logo":"\\media\\sharingbox.jpg","code postal":"33000"}
-    ]
-    }
-    ,{"type":"table","name":"sitesweb_prestation","database":"comparateur","data":
-    [
-    {"id_sitesweb":"1","Cabine_photo":"oui","Borne_photo":"oui","Helio_booth":"non"},
-    {"id_sitesweb":"2","Cabine_photo":"non","Borne_photo":"oui","Helio_booth":"non"},
-    {"id_sitesweb":"3","Cabine_photo":"non","Borne_photo":"oui","Helio_booth":"oui"}
     ]
     }
     ]
