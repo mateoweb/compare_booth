@@ -1,0 +1,396 @@
+[
+{    "data": 
+[
+{
+    "id": "44",
+    "Nom": "Scenophoto",
+    "Cabine_photo": "NON",
+    "Borne_photo": "OUI",
+    "Helio_booth": "NON"
+},
+{
+    "id": "2",
+    "Nom": "Kruu",
+    "Cabine_photo": "NON",
+    "Borne_photo": "OUI",
+    "Helio_booth": "NON"
+},
+{
+    "id": "3",
+    "Nom": "Josepho",
+    "Cabine_photo": "NON",
+    "Borne_photo": "NON",
+    "Helio_booth": "OUI"
+},
+{
+    "id": "4",
+    "Nom": "Vip-box",
+    "Cabine_photo": "NON",
+    "Borne_photo": "OUI",
+    "Helio_booth": "NON"
+},
+{
+    "id": "5",
+    "Nom": "Planet-photo",
+    "Cabine_photo": "NON",
+    "Borne_photo": "NON",
+    "Helio_booth": "OUI"
+},
+{
+    "id": "6",
+    "Nom": "Flashmat",
+    "Cabine_photo": "NON",
+    "Borne_photo": "OUI",
+    "Helio_booth": "OUI"
+},
+{
+    "id": "7",
+    "Nom": "Selfizee",
+    "Cabine_photo": "NON",
+    "Borne_photo": "OUI",
+    "Helio_booth": "NON"
+},
+{
+    "id": "8",
+    "Nom": "Lescabinesdalex",
+    "Cabine_photo": "NON",
+    "Borne_photo": "OUI",
+    "Helio_booth": "NON"
+},
+{
+    "id": "9",
+    "Nom": "Pixil",
+    "Cabine_photo": "OUI",
+    "Borne_photo": "OUI",
+    "Helio_booth": "NON"
+},
+{
+    "id": "10",
+    "Nom": "Cyberselfie",
+    "Cabine_photo": "NON",
+    "Borne_photo": "OUI",
+    "Helio_booth": "NON"
+},
+{
+    "id": "11",
+    "Nom": "Tabobine",
+    "Cabine_photo": "OUI",
+    "Borne_photo": "OUI",
+    "Helio_booth": "NON"
+},
+{
+    "id": "12",
+    "Nom": "Laboxphoto",
+    "Cabine_photo": "NON",
+    "Borne_photo": "OUI",
+    "Helio_booth": "NON"
+},
+{
+    "id": "13",
+    "Nom": "Pixloc",
+    "Cabine_photo": "OUI",
+    "Borne_photo": "OUI",
+    "Helio_booth": "OUI"
+},
+{
+    "id": "14",
+    "Nom": "Lovestorymariage",
+    "Cabine_photo": "NON",
+    "Borne_photo": "OUI",
+    "Helio_booth": "NON"
+},
+{
+    "id": "15",
+    "Nom": "Maselfiebox",
+    "Cabine_photo": "NON",
+    "Borne_photo": "OUI",
+    "Helio_booth": "NON"
+},
+{
+    "id": "16",
+    "Nom": "Latrombinette",
+    "Cabine_photo": "OUI",
+    "Borne_photo": "OUI",
+    "Helio_booth": "NON"
+},
+{
+    "id": "17",
+    "Nom": "Photoboo-thmariage",
+    "Cabine_photo": "NON",
+    "Borne_photo": "OUI",
+    "Helio_booth": "NON"
+},
+{
+    "id": "18",
+    "Nom": "Studioprezzo",
+    "Cabine_photo": "NON",
+    "Borne_photo": "OUI",
+    "Helio_booth": "NON"
+},
+{
+    "id": "19",
+    "Nom": "Latronchebox",
+    "Cabine_photo": "NON",
+    "Borne_photo": "OUI",
+    "Helio_booth": "NON"
+},
+{
+    "id": "20",
+    "Nom": "Seraphinphoto",
+    "Cabine_photo": "NON",
+    "Borne_photo": "OUI",
+    "Helio_booth": "NON"
+},
+{
+    "id": "21",
+    "Nom": "Boiteasourires",
+    "Cabine_photo": "NON",
+    "Borne_photo": "OUI",
+    "Helio_booth": "NON"
+},
+{
+    "id": "22",
+    "Nom": "Lafacebox",
+    "Cabine_photo": "NON",
+    "Borne_photo": "OUI",
+    "Helio_booth": "NON"
+},
+{
+    "id": "23",
+    "Nom": "Karussel",
+    "Cabine_photo": "NON",
+    "Borne_photo": "OUI",
+    "Helio_booth": "NON"
+},
+{
+    "id": "24",
+    "Nom": "Funnyphotobooth",
+    "Cabine_photo": "OUI",
+    "Borne_photo": "OUI",
+    "Helio_booth": "NON"
+},
+{
+    "id": "25",
+    "Nom": "Catchingbox",
+    "Cabine_photo": "NON",
+    "Borne_photo": "OUI",
+    "Helio_booth": "NON"
+},
+{
+    "id": "26",
+    "Nom": "Ntumedias",
+    "Cabine_photo": "NON",
+    "Borne_photo": "OUI",
+    "Helio_booth": "NON"
+},
+{
+    "id": "27",
+    "Nom": "Laboiteamariage",
+    "Cabine_photo": "NON",
+    "Borne_photo": "OUI",
+    "Helio_booth": "NON"
+},
+{
+    "id": "28",
+    "Nom": "Maboiteaimages",
+    "Cabine_photo": "NON",
+    "Borne_photo": "OUI",
+    "Helio_booth": "NON"
+},
+{
+    "id": "29",
+    "Nom": "Laphotoboite",
+    "Cabine_photo": "OUI",
+    "Borne_photo": "OUI",
+    "Helio_booth": "NON"
+},
+{
+    "id": "30",
+    "Nom": "Boiteacliches",
+    "Cabine_photo": "NON",
+    "Borne_photo": "OUI",
+    "Helio_booth": "NON"
+},
+{
+    "id": "31",
+    "Nom": "Lautopix",
+    "Cabine_photo": "NON",
+    "Borne_photo": "OUI",
+    "Helio_booth": "NON"
+},
+{
+    "id": "32",
+    "Nom": "Partybooth",
+    "Cabine_photo": "NON",
+    "Borne_photo": "NON",
+    "Helio_booth": "OUI"
+},
+{
+    "id": "33",
+    "Nom": "Sonor",
+    "Cabine_photo": "NON",
+    "Borne_photo": "OUI",
+    "Helio_booth": "NON"
+},
+{
+    "id": "34",
+    "Nom": "Photoboothlille",
+    "Cabine_photo": "NON",
+    "Borne_photo": "OUI",
+    "Helio_booth": "NON"
+},
+{
+    "id": "35",
+    "Nom": "Bonoevent",
+    "Cabine_photo": "NON",
+    "Borne_photo": "OUI",
+    "Helio_booth": "NON"
+},
+{
+    "id": "36",
+    "Nom": "ia-laboite",
+    "Cabine_photo": "NON",
+    "Borne_photo": "OUI",
+    "Helio_booth": "NON"
+},
+{
+    "id": "37",
+    "Nom": "Pixcube",
+    "Cabine_photo": "NON",
+    "Borne_photo": "OUI",
+    "Helio_booth": "NON"
+},
+{
+    "id": "38",
+    "Nom": "Yourselfiebox",
+    "Cabine_photo": "NON",
+    "Borne_photo": "OUI",
+    "Helio_booth": "NON"
+},
+{
+    "id": "39",
+    "Nom": "Photobooth-77",
+    "Cabine_photo": "NON",
+    "Borne_photo": "OUI",
+    "Helio_booth": "NON"
+},
+{
+    "id": "40",
+    "Nom": "Zygomatic-photobooth",
+    "Cabine_photo": "NON",
+    "Borne_photo": "NON",
+    "Helio_booth": "OUI"
+},
+{
+    "id": "41",
+    "Nom": "Happybox31",
+    "Cabine_photo": "NON",
+    "Borne_photo": "OUI",
+    "Helio_booth": "NON"
+},
+{
+    "id": "42",
+    "Nom": "Studiopixl",
+    "Cabine_photo": "NON",
+    "Borne_photo": "OUI",
+    "Helio_booth": "NON"
+},
+{
+    "id": "43",
+    "Nom": "Souvenirdunjourcalvados",
+    "Cabine_photo": "NON",
+    "Borne_photo": "OUI",
+    "Helio_booth": "NON"
+},
+{
+    "id": "1",
+    "Nom": "Laboiteamoments",
+    "Cabine_photo": "OUI",
+    "Borne_photo": "OUI",
+    "Helio_booth": "OUI"
+}
+]
+
+}
+,{
+    "type": "table",
+    "name": "prestations",
+    "database": "comparateur",
+    "data": 
+[
+{
+    "id_prestation": "1",
+    "type": "Cabine_photo"
+},
+{
+    "id_prestation": "2",
+    "type": "Borne_photo"
+},
+{
+    "id_prestation": "3",
+    "type": "Helio_booth"
+}
+]
+
+}
+,{
+    "type": "table",
+    "name": "sitesweb",
+    "database": "comparateur",
+    "data": 
+[
+{
+    "id_sitesweb": "1",
+    "nom": "Les cabines d'Alex",
+    "prestations": "Hélio Booth, Cabine Photo",
+    "url": "https:\/\/lescabinesdalex.com\/",
+    "logo": "http:\/\/epc.sharingbox.fr\/wp-content\/uploads\/2015\/12\/share.jpg",
+    "code postal": "33000"
+},
+{
+    "id_sitesweb": "2",
+    "nom": "Kruu",
+    "prestations": "Cabine Photo",
+    "url": "https:\/\/kruu.com\/de-fr\/louer-un-photobooth\/",
+    "logo": "http:\/\/epc.sharingbox.fr\/wp-content\/uploads\/2015\/12\/share.jpg",
+    "code postal": "33000"
+},
+{
+    "id_sitesweb": "3",
+    "nom": "Sharing box",
+    "prestations": "Borne Photo, Cabine photo",
+    "url": "https:\/\/www.sharingbox.com",
+    "logo": "\\media\\sharingbox.jpg",
+    "code postal": "33000"
+}
+]
+
+}
+,{
+    "type": "table",
+    "name": "sitesweb_prestation",
+    "database": "comparateur",
+    "data": 
+[
+{
+    "id_sitesweb": "1",
+    "Cabine_photo": "oui",
+    "Borne_photo": "oui",
+    "Helio_booth": "non"
+},
+{
+    "id_sitesweb": "2",
+    "Cabine_photo": "non",
+    "Borne_photo": "oui",
+    "Helio_booth": "non"
+},
+{
+    "id_sitesweb": "3",
+    "Cabine_photo": "non",
+    "Borne_photo": "oui",
+    "Helio_booth": "oui"
+}
+]
+
+}
+]
