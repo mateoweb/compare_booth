@@ -1,17 +1,17 @@
-import React from 'react'
+import React, { Component } from 'react'
 
 
-const Shop = () =>{
-    return ( 
-        <React.Fragment>
-        <div></div>
-    
-        </React.Fragment>
-     );
+class Shop extends Component {
+    render() { 
+        return (<React.Fragment>
+            <div><h1>{this.props.Nom}</h1></div>
+        
+            </React.Fragment>  );
+    }
 }
-
  
 export default Shop;
+
 
 //{ Filters.map((detail, index)=>{
   //  return <h1 key={index}>{detail.Nom}</h1>                
