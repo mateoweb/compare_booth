@@ -3,12 +3,16 @@ import "./App.css";
 import Shop from './components/Shop'
 //import SearchBox from "./components/SearchBox";
 import dataShop from './dataShop.json'
+import Filters from './components/Filters'
 
   class App extends Component {
     state = {  }
 
-    onHandleClick = () => {
-      const dataFilter = dataShop.filter(dataShop => dataShop.Cabine_photo === "OUI")
+    filterClick = () => {
+      //utiliser find() pour trouver un seul élément
+      //utiliser filter() pour trouver plusieurs éléments et créer un nouveau
+
+      const dataFilter = dataShop.filter(dataShop => (dataShop.Cabine_photo === "NON") && (dataShop.Helio_booth === "OUI"))
       console.log(dataFilter);
       
     }
@@ -16,7 +20,8 @@ import dataShop from './dataShop.json'
     render() { 
       return ( 
         <div>
-        <button onClick={this.onHandleClick}>Test Button</button>
+        <Filters/>
+        <button onClick={this.filterClick}>Test Button</button>
         <Shop/>
         </div>
        );

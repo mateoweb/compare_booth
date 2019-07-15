@@ -12,12 +12,12 @@ class Shop extends Component {
     render() { 
         console.log(data)
         return ( 
-            <div>
+            <React.Fragment>
           
             { dataShop.map((detail, index)=>{
                 return <h1 key={index}>{detail.Nom}</h1>                
             }) }
-            </div>
+            </React.Fragment>
          );
     }
 }
