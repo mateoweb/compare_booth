@@ -1,6 +1,8 @@
 import React from "react";
 import dataShop from '../dataShop.json'
 
+const data = dataShop;
+
 class Filters extends React.Component {
   constructor(props) {
     super(props);
@@ -12,7 +14,6 @@ class Filters extends React.Component {
       helioBooth: false
     };
 
-    //    this.handleInputChange = this.handleInputChange.bind(this);
   }
 
   handleChanges = e => {
@@ -23,45 +24,114 @@ class Filters extends React.Component {
   };
 
   filterClick = (e) => {
-       e.preventDefault();
-    //utiliser find() pour trouver un seul élément
-    //utiliser filter() pour trouver plusieurs éléments et créer un nouveau
-    if (this.state.cabinePhoto === true){
-        const dataFilter = dataShop.filter(dataShop => (dataShop.Borne_photo === "NON") && (dataShop.Cabine_photo === "OUI") && (dataShop.Helio_booth === "NON"))
-        console.log(dataFilter);
+e.preventDefault();
+    function multiFilter(array, filters) {
+      const filterKeys = Object.keys(filters);
+      // filters all elements passing the criteria
+      return array.filter((item) => {
+        // dynamically validate all filter criteria
+        return filterKeys.every(key => {
+          // ignores an empty filter
+          if (!filters[key].length) return true;
+          return filters[key].includes(item[key]);
+        });
+      });
     }
+
+    let shops = data;
+
+    if((this.state.bornePhoto === true) && (this.state.cabinePhoto === true) && (this.state.helioBooth === true)){
+      let filters = {
+        Cabine_photo: ["OUI"],
+        Borne_photo: ["OUI"],
+        Helio_booth: ["OUI"],
+      };
+      var filtered1 = multiFilter(shops, filters);
+
+      console.info('Filtered:');
+      console.log(filtered1);
+    }
+
+    else if ((this.state.helioBooth === true) && (this.state.cabinePhoto === true)){
+      let filters = {
+        Helio_booth: ["OUI"],
+        Cabine_photo: ['OUI']
+      };
+
+      var filtered2 = multiFilter(shops, filters);
+
+      console.info('Filtered:');
+      console.log(filtered2);
+    }
+
+    else if ((this.state.bornePhoto === true) && (this.state.cabinePhoto === true)){
+      let filters = {
+        Cabine_photo: ["OUI"],
+        Borne_photo: ['OUI']
+      };
+
+      var filtered3 = multiFilter(shops, filters);
+
+      console.info('Filtered:');
+      console.log(filtered3);
+    }
+
+    else if ((this.state.helioBooth === true) && (this.state.bornePhoto === true)){
+      let filters = {
+        Helio_booth: ["OUI"],
+        Borne_photo: ['OUI']
+      };
+
+      var filtered4 = multiFilter(shops, filters);
+
+      console.info('Filtered:');
+      console.log(filtered4);
+    }
+
     else if (this.state.bornePhoto === true){
-        const dataFilter2 = dataShop.filter(dataShop => (dataShop.Borne_photo === "OUI") && (dataShop.Cabine_photo === "NON") && (dataShop.Helio_booth === "NON"))
-        console.log(dataFilter2);
+      let filters = {
+        Borne_photo: ["OUI"],
+      };
+
+      var filtered5 = multiFilter(shops, filters);
+
+      console.info('Filtered:');
+      console.log(filtered5);
     }
+
+    else if (this.state.cabinePhoto === true){
+      let filters = {
+        Cabine_photo: ["OUI"],
+      };
+
+      var filtered6 = multiFilter(shops, filters);
+
+      console.info('Filtered:');
+      console.log(filtered6);
+    }
+
     else if (this.state.helioBooth === true){
-        const dataFilter3 = dataShop.filter(dataShop => (dataShop.Helio_booth === "OUI") && (dataShop.Borne_photo === "NON") && (dataShop.Cabine_photo === "NON"))
-        console.log(dataFilter3);
-    }
-    else if (this.state.cabinePhoto === true && this.state.bornePhoto === true){
-        const dataFilter4 = dataShop.filter(dataShop => (dataShop.Cabine_photo === "OUI") && (dataShop.Borne_photo === "OUI") && (dataShop.Helio_booth === "NON"))
-        console.log(dataFilter4);
-    }
-    else if (this.state.cabinePhoto === true && this.state.helioBooth === true){
-        const dataFilter5 = dataShop.filter(dataShop => (dataShop.Cabine_photo === "OUI") && (dataShop.Helio_booth === "OUI") && (dataShop.Borne_photo === "NON"))
-        console.log(dataFilter5);
-    }
-    else if (this.state.cabinePhoto === true && this.state.helioBooth === true && this.state.bornePhoto === true){
-        const dataFilter6 = dataShop.filter(dataShop => (dataShop.Cabine_photo === "OUI") && (dataShop.Borne_photo === "OUI") && (dataShop.Helio_booth === "OUI"))
-        console.log(dataFilter6);
-    }
-    else if (this.state.bornePhoto === true && this.state.helioBooth === true){
-        const dataFilter7 = dataShop.filter(dataShop => (dataShop.Cabine_photo === "NON") && (dataShop.Helio_booth === "OUI") && (dataShop.Borne_photo === "OUI"))
-        console.log(dataFilter7);
-    }
-    else if (this.state.cabinePhoto === true && this.state.helioBooth === true){
-        const dataFilter8 = dataShop.filter(dataShop => (dataShop.Cabine_photo === "OUI") && (dataShop.Helio_booth === "OUI") && (dataShop.Borne_photo === "NON"))
-        console.log(dataFilter8);
-    }
-    else {
-        console.log('please select an option');
+      let filters = {
+        Helio_booth: ["OUI"],
+      };
+
+      var filtered7 = multiFilter(shops, filters);
+
+      console.info('Filtered:');
+      console.log(filtered7);
     }
     
+ 
+    
+    // the value of each key is an array with the values to filter
+
+    
+    // filter the shops array by choosen parameters
+    
+    
+
+    
+
     
   }
 
