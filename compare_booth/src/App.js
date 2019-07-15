@@ -15,6 +15,7 @@ import Filters from './components/Filters'
         <div>
         <Filters/>
         
+
         </div>
        );
     }
