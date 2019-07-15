@@ -4,6 +4,7 @@ import "./App.css";
 //import SearchBox from "./components/SearchBox";
 
 import Filters from './components/Filters'
+import FilteredResultBox from "./components/FilteredResultBox";
 
   class App extends Component {
     state = {  }
@@ -14,7 +15,7 @@ import Filters from './components/Filters'
       return ( 
         <div>
         <Filters/>
-        
+        <FilteredResultBox/>
 
         </div>
        );
