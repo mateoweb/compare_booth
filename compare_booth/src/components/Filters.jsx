@@ -1,60 +1,92 @@
-import React from 'react';
-
+import React from "react";
 
 class Filters extends React.Component {
-    constructor(props) {
-      super(props);
-      this.state = {
-        isGoing: true,
-        numberOfGuests: 2,
-        selectedRadio: "option1"
-      };
-  
-      this.handleInputChange = this.handleInputChange.bind(this);
-    }
-  
-    handleInputChange(event) {
-      const target = event.target;
-      const value = target.type === 'checkbox' ? target.checked : target.value;
-      const name = target.name;
-  
-      this.setState({
-        [name]: value
-      });
-    }
-  
-    render() {
-      return (
-        <form>
-          <label>
-            Participe :
-            <input
-              name="isGoing"
-              type="checkbox"
-              checked={this.state.isGoing}
-              onChange={this.handleInputChange} />
-          </label>
-          <br />
-          <label>
-            Nombre d'invités :
-            <input
-              name="numberOfGuests"
-              type="number"
-              value={this.state.numberOfGuests}
-              onChange={this.handleInputChange} />
-          </label>
-          <div>
-            <h1>Filtrer la recherche</h1>
-        Code postal: <input label="Code postal"/><br/>
-        Professionnel <input type="radio"/><br/>
-        Particulier <input type="radio"/><br/>
-        <input/><br/>
+  constructor(props) {
+    super(props);
+    this.state = {
+      selectedOption: "option1",
+      zip_code: "",
+      cabinePhoto: false,
+      bornePhoto: false,
+      helioBooth: false
+    };
 
-            </div>
-        </form>
-      );
-    }
+    //    this.handleInputChange = this.handleInputChange.bind(this);
   }
 
- 
+  handleChanges = e => {
+    const input = e.target;
+    const name = input.name;
+    const value = input.type === "checkbox" ? input.checked : input.value;
+    this.setState({ [name]: value });
+  };
+
+  render() {
+    return (
+      <form>
+        <h1>Filtrer la recherche</h1>
+        <div className="form-check">
+          <label>
+            <input
+              name="selectedOption"
+              type="radio"
+              value="particuliers"
+              checked={this.state.selectedOption === "particuliers"}
+              onChange={this.handleChanges}
+            />
+            Particulier
+          </label>
+        </div>
+
+        <div className="form-check">
+          <label>
+            <input
+              name="selectedOption"
+              type="radio"
+              value="pros"
+              checked={this.state.selectedOption === "pros"}
+              onChange={this.handleChanges}
+            />
+            Pros
+          </label>
+        </div>
+
+        <label>
+          Code postal:
+          <input
+            type="text"
+            name="zip_code"
+            value={this.state.zip_code}
+            onChange={this.handleChanges}
+          />
+        </label>
+        <br/>
+        <label>
+          
+          <input
+            name="cabinePhoto"
+            type="checkbox"
+            value={this.state.cabinePhoto}
+            onChange={this.handleChanges}
+          />Cabine photo:{" "}
+          
+          <input
+            name="bornePhoto"
+            type="checkbox"
+            value={this.state.bornePhoto}
+            onChange={this.handleChanges}
+          />Borne photo:{" "}
+          
+          <input
+            name="helioBooth"
+            type="checkbox"
+            value={this.state.helioBooth}
+            onChange={this.handleChanges}
+          />Héliobooth:{" "}
+        </label>
+      </form>
+    );
+  }
+}
+
 export default Filters;
