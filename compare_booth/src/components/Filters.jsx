@@ -7,11 +7,12 @@ class Filters extends Component {
   render() {
     return (
       <React.Fragment>
-        <form>
+        <form className="form-group">
           <h1>Filtrer la recherche</h1>
           <div className="form-check">
             <label>
               <input
+               
                 name="selectedOption"
                 type="radio"
                 value="particuliers"
@@ -25,6 +26,7 @@ class Filters extends Component {
           <div className="form-check">
             <label>
               <input
+    
                 name="selectedOption"
                 type="radio"
                 value="pros"
@@ -38,6 +40,7 @@ class Filters extends Component {
           <label>
             Code postal:
             <input
+            
               type="text"
               name="zip_code"
               value={this.props.zip_code}
@@ -47,6 +50,7 @@ class Filters extends Component {
           <br />
           <label>
             <input
+           
               name={"cabinePhoto"}
               type="checkbox"
               value={this.props.cabinePhoto}
@@ -54,6 +58,7 @@ class Filters extends Component {
             />
             Cabine photo{" "}
             <input
+          
               name="bornePhoto"
               type="checkbox"
               value={this.props.bornePhoto}
@@ -61,13 +66,14 @@ class Filters extends Component {
             />
             Borne photo{" "}
             <input
+            
               name="helioBooth"
               type="checkbox"
               value={this.props.helioBooth}
               onChange={this.props.handleChanges}
             />
             Héliobooth <br />
-          </label>
+          </label><br/>
           <button onClick={this.props.filterClick}>Go !</button>
         </form>
       </React.Fragment>

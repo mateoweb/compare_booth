@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+
 //import Filters from './Filters'
 
 class Shop extends Component {
@@ -6,11 +7,11 @@ class Shop extends Component {
     return (
       <React.Fragment>
         {this.props.filteredResults.map((detail, index) => {
-          return <div key={index}>
-          <h3 >{detail.Nom}</h3><br/>
-          <p >{detail.id}</p>
-          
-          
+          return <div className="list-group"key={index}>
+          <div className="list-group-item">
+          <h4>{detail.Nom}</h4>
+          <p>Je suis un résumé de shop</p>
+          </div>     
           </div>;        
         })}
         

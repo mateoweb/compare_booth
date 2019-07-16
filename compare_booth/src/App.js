@@ -180,6 +180,16 @@ class App extends Component {
           filterClick={this.filterClick}
           handleChanges={this.handleChanges}
         />
+        <FilteredResultBox
+          selectedOption={this.state.selectedOption}
+          zip_code={this.state.zip_code}
+          cabinePhoto={this.state.cabinePhoto}
+          bornePhoto={this.state.bornePhoto}
+          filteredResults={this.state.filteredResults}
+          filterClick={this.filterClick}
+          handleChanges={this.handleChanges}
+        />
+        
       </React.Fragment>
     );
   }
