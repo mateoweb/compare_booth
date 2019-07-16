@@ -1,6 +1,6 @@
 import React from "react";
 import dataShop from "../dataShop.json";
-import Shop from "./Shop"
+//import Shop from "./Shop"
 
 const data = dataShop;
 
@@ -143,16 +143,21 @@ class Filters extends React.Component {
 
       console.info("Filtered:");
       console.log(filtered);
+     
     }
 
     else {console.log('aucun résultat')}
-    console.log(filtered[0].id)
+    
+   
+
 
     // *the value of each key is an array with the values to filter
     // *filter the shops array by choosen parameters
   };
 
+
   render() {
+    console.log(this.state.filteredResults[0].id)
     return (
       <React.Fragment>
         <form>
@@ -218,11 +223,12 @@ class Filters extends React.Component {
           </label>
           <button onClick={this.filterClick}>Go !</button>
         </form>
-      
-      <Shop key={this.state.filteredResults[0].id} name={this.state.filteredResults[0].Nom} />
+
+
       </React.Fragment>
     );
   }
 }
 
 export default Filters;
+//<Shop key={this.state.filteredResults[0].id} name={this.state.filteredResults[0].Nom} />

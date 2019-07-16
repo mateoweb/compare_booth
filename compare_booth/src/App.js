@@ -5,23 +5,30 @@ import "./App.css";
 
 import Filters from './components/Filters'
 import FilteredResultBox from "./components/FilteredResultBox";
+import Shop from './components/Shop'
 
-  class App extends Component {
-    state = {  }
-
-   
-
-    render() { 
-      return ( 
-        <div>
-        <Filters/>
-        <FilteredResultBox/>
-
-        </div>
-       );
-    }
+class App extends Component {
+  constructor() {
+    super();
+    this.state = { 
+      selectedOption: "option1",
+      zip_code: "",
+      cabinePhoto: false,
+      bornePhoto: false,
+      helioBooth: false,
+      filteredResults: ['']
+     }
   }
+  render() { 
+    return ( 
+    <React.Fragment>
+        <Filters />
+        <FilteredResultBox/>
+        <Shop/>
+    </React.Fragment> );
+  }
+}
+ 
+export default App;
 
-  export default App
-   
-
+ 
