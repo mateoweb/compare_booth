@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.css'
+import 'pretty-checkbox/src/pretty-checkbox.scss'
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

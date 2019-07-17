@@ -8,6 +8,8 @@ import dataShop from "./dataShop.json";
 import Filters from "./components/Filters";
 import FilteredResultBox from "./components/FilteredResultBox";
 import Shop from "./components/Shop";
+import Header from "./components/Header";
+
 
 const data = dataShop;
 
@@ -161,6 +163,7 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
+      <Header/>
         <Filters
           selectedOption={this.state.selectedOption}
           zip_code={this.state.zip_code}
