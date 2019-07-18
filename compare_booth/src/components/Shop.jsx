@@ -15,6 +15,7 @@ class Shop extends Component {
           return <div className="list-group"key={index}>
           <div className="list-group-item">
           <h4>{detail.Nom}</h4>
+          <h3>A partir de {detail.startPrice}€</h3>
           <StarRatings
         rating={5}
         starDimension="20px"
@@ -22,7 +23,7 @@ class Shop extends Component {
         starRatedColor="rgb(255,215,0)"
       />
           
-          <p>Je suis un résumé de shop</p>
+          <p>{detail.resume}</p>
           <Button>Plus de détails</Button>
           </div>     
           </div>;        
