@@ -1,5 +1,7 @@
 import React, { Component } from "react";
+
 import StarRatings from 'react-star-ratings';
+import Button from "react-bootstrap/Button";
 
 
 //import Filters from './Filters'
@@ -21,6 +23,7 @@ class Shop extends Component {
       />
           
           <p>Je suis un résumé de shop</p>
+          <Button>Plus de détails</Button>
           </div>     
           </div>;        
         })}
@@ -32,6 +35,3 @@ class Shop extends Component {
 
 export default Shop;
 
-//   { Filters.map((detail, index)=>{
-//   return <h1 key={index}>{detail.Nom}</h1>
-//   }) }

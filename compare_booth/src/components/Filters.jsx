@@ -1,6 +1,8 @@
 import React, { Component } from "react";
+
 import Navbar from "react-bootstrap/Navbar";
 import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
 import InputGroup from "react-bootstrap/InputGroup";
 import FormControl from "react-bootstrap/FormControl";
 
@@ -107,7 +109,7 @@ class Filters extends Component {
             </div>
 
             <br />
-            <button onClick={this.props.filterClick}>Go !</button>
+            <Button variant="success" onClick={this.props.filterClick}>Go !</Button>
           </Form>
         </Navbar>
       </React.Fragment>
