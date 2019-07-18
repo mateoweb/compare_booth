@@ -22,7 +22,8 @@ class App extends Component {
       cabinePhoto: false,
       bornePhoto: false,
       helioBooth: false,
-      filteredResults: [""]
+      filteredResults: [""],
+      rating: 5
     };
   }
 
@@ -32,6 +33,12 @@ class App extends Component {
     const value = input.type === "checkbox" ? input.checked : input.value;
     this.setState({ [name]: value });
   };
+
+  changeRating( newRating, name ) {
+    this.setState({
+      rating: newRating
+    });
+  }
 
   filterClick = e => {
     e.preventDefault();
@@ -182,6 +189,7 @@ class App extends Component {
           filteredResults={this.state.filteredResults}
           filterClick={this.filterClick}
           handleChanges={this.handleChanges}
+          rating={this.rating}
         />
         <FilteredResultBox
           selectedOption={this.state.selectedOption}
