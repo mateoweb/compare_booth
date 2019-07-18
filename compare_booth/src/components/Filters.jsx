@@ -94,7 +94,7 @@ class Filters extends Component {
             <div className="list-group-item">
             <InputGroup>
               <InputGroup.Prepend>
-                <InputGroup.Text id="basic-addon1"><span class="oi oi-map-marker"></span></InputGroup.Text>
+                <InputGroup.Text id="basic-addon1"><span className="oi oi-map-marker"></span></InputGroup.Text>
               </InputGroup.Prepend>
               <FormControl
                 placeholder="Code postal"

@@ -57,6 +57,8 @@ class App extends Component {
 
     let shops = data;
 
+  
+
     if (
       this.state.bornePhoto === true &&
       this.state.cabinePhoto === true &&
@@ -73,6 +75,18 @@ class App extends Component {
         filteredResults: filtered
       });
 
+      //2nd filter to filter b2b/b2C
+      if(this.state.selectedOption === "pros"){
+       filters = {
+         pro: ["OUI"]
+       };
+
+       filtered = multiFilter(filtered, filters);
+
+       this.setState({
+         filteredResults : filtered
+       })
+      }
       console.info("Filtered:");
       console.log(filtered);
     } else if (
@@ -88,6 +102,18 @@ class App extends Component {
       this.setState({
         filteredResults: filtered
       });
+      //2nd filter to filter b2b/b2C
+      if(this.state.selectedOption === "pros"){
+        filters = {
+          pro: ["OUI"]
+        };
+ 
+        filtered = multiFilter(filtered, filters);
+ 
+        this.setState({
+          filteredResults : filtered
+        })
+       }
 
       console.info("Filtered:");
       console.log(filtered);
@@ -104,6 +130,19 @@ class App extends Component {
       this.setState({
         filteredResults: filtered
       });
+
+      //2nd filter to filter b2b/b2C
+      if(this.state.selectedOption === "pros"){
+        filters = {
+          pro: ["OUI"]
+        };
+ 
+        filtered = multiFilter(filtered, filters);
+ 
+        this.setState({
+          filteredResults : filtered
+        })
+       }
 
       console.info("Filtered:");
       console.log(filtered);
@@ -121,6 +160,19 @@ class App extends Component {
         filteredResults: filtered
       });
 
+      //2nd filter to filter b2b/b2C
+      if(this.state.selectedOption === "pros"){
+        filters = {
+          pro: ["OUI"]
+        };
+ 
+        filtered = multiFilter(filtered, filters);
+ 
+        this.setState({
+          filteredResults : filtered
+        })
+       }
+
       console.info("Filtered:");
       console.log(filtered);
     } else if (this.state.bornePhoto === true) {
@@ -132,6 +184,19 @@ class App extends Component {
       this.setState({
         filteredResults: filtered
       });
+
+      //2nd filter to filter b2b/b2C
+      if(this.state.selectedOption === "pros"){
+        filters = {
+          pro: ["OUI"]
+        };
+ 
+        filtered = multiFilter(filtered, filters);
+ 
+        this.setState({
+          filteredResults : filtered
+        })
+       }
 
       console.info("Filtered:");
       console.log(filtered);
@@ -145,6 +210,19 @@ class App extends Component {
         filteredResults: filtered
       });
 
+      //2nd filter to filter b2b/b2C
+      if(this.state.selectedOption === "pros"){
+        filters = {
+          pro: ["OUI"]
+        };
+ 
+        filtered = multiFilter(filtered, filters);
+ 
+        this.setState({
+          filteredResults : filtered
+        })
+       }
+
       console.info("Filtered:");
       console.log(filtered);
     } else if (this.state.helioBooth === true) {
@@ -156,6 +234,19 @@ class App extends Component {
       this.setState({
         filteredResults: filtered
       });
+
+      //2nd filter to filter b2b/b2C
+      if(this.state.selectedOption === "pros"){
+        filters = {
+          pro: ["OUI"]
+        };
+ 
+        filtered = multiFilter(filtered, filters);
+ 
+        this.setState({
+          filteredResults : filtered
+        })
+       }
 
       console.info("Filtered:");
       console.log(filtered);
