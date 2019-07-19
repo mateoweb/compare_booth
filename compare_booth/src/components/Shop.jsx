@@ -12,10 +12,10 @@ class Shop extends Component {
     return (
       <React.Fragment>
         {this.props.filteredResults.map((detail, index) => {
-          return <div className="list-group"key={index}>
-          <div className="list-group-item">
-          <h4>{detail.Nom}</h4>
-          <h3>A partir de {detail.startPrice}€</h3>
+          return <div key={index} className="list-group">
+          <div  className="list-group-item" >
+          <h3>{detail.Nom}</h3>
+          <h4>A partir de {detail.startPrice}€</h4>
           <StarRatings
         rating={5}
         starDimension="20px"
@@ -24,7 +24,7 @@ class Shop extends Component {
       />
           
           <p>{detail.resume}</p>
-          <Button>Plus de détails</Button>
+          <Button onClick={this.props.handleShopClick}>Plus de détails</Button>
           </div>     
           </div>;        
         })}

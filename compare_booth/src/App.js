@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 
 import dataShop from "./dataShop.json";
+import ShopDetail from "./components/ShopDetail"
 //import Shop from './components/Shop'
 //import SearchBox from "./components/SearchBox";
 
@@ -17,13 +18,18 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
+      isClicked: false,
       selectedOption: "option1",
       zip_code: "",
       cabinePhoto: false,
       bornePhoto: false,
       helioBooth: false,
       filteredResults: [""],
-      rating: 5
+      rating: 5,
+      startPrice: 0,
+      resume: "",
+      website: "",
+      phone:""
     };
   }
 
@@ -40,6 +46,12 @@ class App extends Component {
     });
   }
 
+  handleShopClick() {
+    this.setState({isClicked: true});
+  }
+
+
+ 
   filterClick = e => {
     e.preventDefault();
     function multiFilter(array, filters) {
@@ -280,7 +292,23 @@ class App extends Component {
           filteredResults={this.state.filteredResults}
           filterClick={this.filterClick}
           handleChanges={this.handleChanges}
+          resume = {this.resume}
           rating={this.rating}
+        />
+        <ShopDetail
+         selectedOption={this.state.selectedOption}
+         zip_code={this.state.zip_code}
+         cabinePhoto={this.state.cabinePhoto}
+         bornePhoto={this.state.bornePhoto}
+         filteredResults={this.state.filteredResults}
+         filterClick={this.filterClick}
+         handleChanges={this.handleChanges}
+         rating={this.rating}
+         startPrice = {this.startPrice}
+         resume = {this.resume}
+         website = {this.website}
+         phone = {this.phone}
+
         />
         <FilteredResultBox
           selectedOption={this.state.selectedOption}
@@ -291,6 +319,7 @@ class App extends Component {
           filterClick={this.filterClick}
           handleChanges={this.handleChanges}
         />
+
         
       </React.Fragment>
     );
